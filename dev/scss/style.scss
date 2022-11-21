@@ -3,16 +3,14 @@
 @import './fonts';
 @import './base';
 
-.title-part {
+.first-section {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    position: relative;
 }
 
-.main-svg {
-    position: absolute;
-    top: 0;
-    transform: translateX(90%);
+.title-part {
+    position: relative;
+    min-height: 950px;
 }
 
 .flex {
@@ -23,6 +21,7 @@
         flex-direction: column;
     }
 }
+
 
 nav {
     display: flex;
@@ -37,6 +36,8 @@ li {
 
 .nav {
     padding: 10px 0;
+    position: relative;
+    z-index: 2;
 
     a {
         color: white;
@@ -64,4 +65,23 @@ li {
     height: 6px;
     background: #E6E6F0;
     border-radius: 50%;
+}
+
+.main {
+    text-align: center;
+    color: white;
+
+    &__image {
+        position: absolute;
+        left: calc(50% - 350px);
+        top: calc(50% - 600px);
+        min-height: 1000px;
+        min-width: 450px;
+    }
+
+    &__content {
+        position: absolute;
+        left: calc(50% - 175px);
+        top: calc(50% - 150px);
+    }
 }

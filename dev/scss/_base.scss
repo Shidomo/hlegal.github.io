@@ -19,3 +19,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+h1 {
+    font-size: 38px;
+    line-height: 46.32px;
+}
+
+.main-scroll {
+    fill: white;
+    position: absolute;
+    left: calc(50% - 21px);
+    bottom: 30px;
+}
