@@ -48,9 +48,27 @@ a {
     display: inline-block;
     color:$active-regular;
     text-decoration: none;
+
+    &:hover {
+        color: $hover-accent;
+    }
 }
 
 p {
     color: $grey-text;
     font-weight: 400;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+.tel {
+    color: $main-regular;
 }

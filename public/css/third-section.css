@@ -1,0 +1,10 @@
+.third-section {
+  background: #F5F5FA;
+  padding: 60px 0 30px;
+}
+.third-section .publications-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRoaXJkLXNlY3Rpb24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJO0VBQ0E7O0FBRUE7RUFDSTtFQUNBO0VBQ0EiLCJmaWxlIjoidGhpcmQtc2VjdGlvbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICcuL3ZhcnMnO1xyXG4udGhpcmQtc2VjdGlvbiB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjRjVGNUZBO1xyXG4gICAgcGFkZGluZzogNjBweCAwIDMwcHg7XHJcblxyXG4gICAgLnB1YmxpY2F0aW9ucy1jYXJkcyB7XHJcbiAgICAgICAgZGlzcGxheTogZ3JpZDtcclxuICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xyXG4gICAgICAgIGdhcDogMzBweDtcclxuICAgIH1cclxufSJdfQ== */

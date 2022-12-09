@@ -1,0 +1,11 @@
+@import './vars';
+.third-section {
+    background: #F5F5FA;
+    padding: 60px 0 30px;
+
+    .publications-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}

@@ -7,9 +7,7 @@
     justify-content: center;
     color: white;
     &__container {
-        background-image: url(../images/h-main.svg);
-        background-position: top;
-        background-repeat: no-repeat;
+        
         min-height: 850px;
         display: flex;
         justify-content: center;
@@ -24,5 +22,11 @@
         min-height: 500px;
         align-items: center;
         padding-bottom: 30px;
+    }
+
+    &__image {
+        background-image: url(../images/h-main.svg);
+        background-position: top;
+        background-repeat: no-repeat;
     }
 }

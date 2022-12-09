@@ -4,7 +4,7 @@
     .team-slider {
         display: flex;
         justify-content: space-between;
-        background: rgb(235, 230, 230);
+        background: #F5F5FA;
         z-index: -3;
         border-radius: 20px;
         overflow: hidden;
@@ -21,11 +21,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-/*             img {
-                position: absolute;
-                background-position: center;
-                transform: translateY(-20%);
-            } */
         }
 
         &__content {

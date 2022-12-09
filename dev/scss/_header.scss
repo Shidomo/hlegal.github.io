@@ -8,6 +8,9 @@
     z-index: 999;
     a {
         color: $header-text-color;
+        &:hover {
+            color:$hover-accent;
+        }
     }
     
 
@@ -34,6 +37,13 @@
         display: flex;
         column-gap: 7px;
         list-style: none;
+        padding: 0 10px;
+        a{
+            &:hover {
+                color: white;
+            }
+
+        }
         
     }
 
