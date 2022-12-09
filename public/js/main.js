@@ -2,19 +2,27 @@ var first = document.getElementById("consistent-text");
 var second = document.getElementById("customer-oriented-text");
 var third = document.getElementById("innovative-text");
 var four = document.getElementById("business-oriented-text");
-let check = document.querySelectorAll('.checbox-items');
+let check = document.querySelectorAll('.checkbox-items');
 let lastClicked = check[0];
 
+
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:false,
+        dots:true,
+        autoplay:true,
+        autoplaySpeed: 5000
+    });
+  });
 
 
 
 for( let i = 0; i < check.length; i++ ){
-
   check[i].addEventListener('click', function(){
     lastClicked.classList.remove('linear-checkbox');
     this.classList.add('linear-checkbox');
     lastClicked = this; 
-  });
+  })
 }
 
 
@@ -49,6 +57,7 @@ function customer_oriented() {
         first.style.display = "none"
         third.style.display = "none"
         four.style.display = "none";
+
     }
 }
 
@@ -77,6 +86,10 @@ function business_oriented() {
     }
     else {
         four.style.display = "block";
+        first.style.display = "none";
+        second.style.display = "none";
+        third.style.display = "none";
 
     }
 }
+

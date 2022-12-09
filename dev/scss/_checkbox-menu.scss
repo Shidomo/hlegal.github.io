@@ -49,7 +49,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
 }
 
 #consistent-text {
@@ -60,10 +59,13 @@
     display: none;
 }
 
-.checbox-items {
+.checkbox-items {
     cursor: pointer;
 
     &:hover {
-        color: $hover-accent;
+        background: $hover-accent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head> 
@@ -17,12 +18,12 @@
                     </div>
                     <div class="header__side-bar">
                         <ul class="header__switch-lang ">
-                            <li class="switch-lang__item"><a href="#">УК</a></li>
-                            <li class="switch-lang__item"><a href="#">РУ</a></li>
-                            <li class="switch-lang__item"><a href="#">EN</a></li>
+                            <li class="header__switch-lang-item"><a href="#">УК</a></li>
+                            <li class="header__switch-lang-item"><a href="#">РУ</a></li>
+                            <li class="header__switch-lang-item"><a href="#">EN</a></li>
                         </ul>
                         <ul class="header__contact">
-                            <li><a href="#">Kyiv, Mechnikova str, 14/1</a></li>
+                            <li>Kyiv, Mechnikova str, 14/1</li>  <!-- сделать адресс тэг -->
                             <li><a href="+380800211927">0800 211 927</a></li>
                             <li><a href="#">fav</a></li>
                         </ul>
@@ -51,10 +52,10 @@
                     <div class="checkbox-menu">
                         <div class="checkbox-menu__container">
                             <ul class="checkbox-menu__items">
-                                <li id="consistent" class="checbox-items linear-checkbox" onclick="consistent()">Consistent</li>
-                                <li id="customer_oriented" onclick="customer_oriented()" class="checbox-items">Customer Oriented</li>
-                                <li id="innovative" class="checbox-items" onclick="innovative()">Innovative</li>
-                                <li id="business_oriented" class="checbox-items" onclick="business_oriented()">Business oriented</li>
+                                <li id="consistent" class="checkbox-items linear-checkbox" onclick="consistent()">Consistent</li>
+                                <li id="customer_oriented" onclick="customer_oriented()" class="checkbox-items">Customer Oriented</li>
+                                <li id="innovative" class="checkbox-items" onclick="innovative()">Innovative</li>
+                                <li id="business_oriented" class="checkbox-items" onclick="business_oriented()">Business oriented</li>
                             </ul>
                             <div class="checkbox-menu__text">
                                 <div class="checkbox-text" id="consistent-text">
@@ -63,7 +64,7 @@
                                 </div>
                                 <div class="checkbox-text" id="customer-oriented-text">
                                     <h3>Customer Oriented</h3>
-                                    <span>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</span>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut saepe quod asperiores fugiat deserunt incidunt, inventore minus ipsum distinctio!</span>
                                 </div>
                                 <div id="innovative-text" class="checkbox-text">
                                     <h3>Innovative.</h3>
@@ -75,11 +76,125 @@
                                 </div>
                             </div>
                         </div>
+                    </div> <!-- чекбокс меню -->
+                    <div class="service-section">
+                        <a href="#" class="link-btn">services <img src="./images/Arrow-right.svg" alt="Arrow-right"></a>
+                        <h2>What can we do better than others?</h2>
+                        <div class="service-section__cards">
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Ecommerce.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</span>
+                            </div>
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Support.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</span>
+                            </div>
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Coprorate.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</span>
+                            </div>
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Trust.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</span>
+                            </div>
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Protection.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</span>
+                            </div>
+                            <div class="service-section__card card">
+                                <a href="#" class="cards__img"><img src="./images/Services/Court.svg" alt="" srcset=""></a>
+                                <h3><a href="#">IT and e-commerce</a></h3>
+                                <span>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- первая секция -->
+            <div class="second-section">
+                <div class="container">
+                    <div class="slider">
+                        <div class="team-slider">
+                            <div class="team-slider__img"></div>
+                            <div class="team-slider__content">
+                                <a href="" class="link-btn">Команда <img src="./images/Arrow-right.svg" alt="Arrow-right"></a>
+                                <blockquote> <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2><!-- исправить  текст -->
+                                </blockquote>
+                                <h4>Олександр Олександровський</h4>
+                                <p>Керуючий партнер</p> 
+                            </div>
+                        </div>
+                        <div class="team-slider">
+                            <div class="team-slider__img"></div>
+                            <div class="team-slider__content">
+                                <a href="#" class="link-btn">Команда <img src="./images/Arrow-right.svg" alt="Arrow-right"></a>
+                                <blockquote> <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                </blockquote>
+                                <h4>Олександр Олександровський</h4>
+                                <p>Керуючий партнер</p> 
+                            </div>
+                        </div>
+                        <div class="team-slider">
+                            <div class="team-slider__img"></div>
+                            <div class="team-slider__content">
+                                <a href="" class="link-btn">Команда <img src="./images/Arrow-right.svg" alt="Arrow-right"></a>
+                                <blockquote> <h2>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2><!-- исправить  текст -->
+                                </blockquote>
+                                <h4>Олександр Олександровський</h4>
+                                <p>Керуючий партнер</з> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clients">
+                    <h3>They already trust us</h3>
+                    <ul class="clients__list">
+                        <li class="clients__item clients__item-2"><a href="#"><img src="./images/client/Homepage/hilel.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-2"><a href="#"><img src="./images/client/Homepage/wanna.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-3"><a href="#"><img src="./images/client/Homepage/tapgrein.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-4"><a href="#"><img src="./images/client/Homepage/look.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-5"><a href="#"><img src="./images/client/Homepage/garangear.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-6"><a href="#"><img src="./images/client/Homepage/atteligent.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-7"><a href="#"><img src="./images/client/Homepage/clicki.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-8"><a href="#"><img src="./images/client/Homepage/eco.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-9"><a href="#"><img src="./images/client/Homepage/ifotek.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-10"><a href="#"><img src="./images/client/Homepage/citypark.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-11"><a href="#"><img src="./images/client/Homepage/art-prink.svg" alt=""></a></li>
+                        <li class="clients__item clients__item-12"><a href="#"><img src="./images/client/Homepage/ultimate-card.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div> <!-- Вторая секция -->
+            <div class="third-section">
+                <div class="container">
+                    <a href="section-btn"></a>
+                    <h2>We have something to tell</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><h4>Equity associate</h4></a>
+                            <p>april 22</p>
+                            <p>i`m a jun on projects. I am co-owner of a law firm. HOw it happened. Before entering my parents told me that if I...</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="container">
+                <address>Kyiv, Mechnikova str, 14/1</address>
+                <ul>
+                    <li>ON MAP</li>
+                </ul>
+
+            </div>
+        </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

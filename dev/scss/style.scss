@@ -1,39 +1,48 @@
-@import './mixins';
 @import './vars';
+@import './mixins';
 @import './normalize';
 @import './fonts';
+@import './components/slider';
 @import './base';
 @import './header';
 @import './checkbox-menu';
+@import './first-section';
+@import './main-section';
+@import './service-section';
+@import './second-section';
 
 
-
-.main-section {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    border-radius: 0px 0px 12px 12px;
+.link-btn {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    color: $main-first-section-text-color;
-    &__container {
-        background-image: url(../images/h-main.svg);
-        background-position: top;
-        background-repeat: no-repeat;
-        min-height: 850px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 40px;
-    }
-    
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 500px;
-        align-items: center;
-        padding-bottom: 30px;
+    gap: 5px;
+
+    img {
+        width: 10px;
+        height: 15px;
     }
 }
-    
-    
+.clients {
+    text-align: center;
+    padding: 30px 0;
+
+    h3 {
+        padding: 30px 0;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__item {
+        color: #fff;
+        a {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

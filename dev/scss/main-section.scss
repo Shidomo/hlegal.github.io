@@ -1,0 +1,28 @@
+@import './vars';
+.main-section {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &__container {
+        background-image: url(../images/h-main.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        min-height: 850px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 40px;
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 500px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+}

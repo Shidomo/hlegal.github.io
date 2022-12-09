@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 }
 
 .container {
-    padding: 0 20px;
     margin: 0 auto;
     width: 80%;
 }
@@ -28,4 +28,29 @@ img {
 h1 {
     font-size: 38px;
     line-height: 46.32px;
+}
+
+h2 {
+    color: #F0145A;
+    font-size: 38px;
+    line-height: 46.32px;
+    font-weight: 700;
+}
+
+h4 {
+    color: $grey-text;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+a {
+    display: inline-block;
+    color:$active-regular;
+    text-decoration: none;
+}
+
+p {
+    color: $grey-text;
+    font-weight: 400;
 }

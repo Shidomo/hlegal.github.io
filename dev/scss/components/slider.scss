@@ -1,0 +1,26 @@
+.slider {
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        li {
+            list-style: none;
+        }
+        button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border: 0;
+            border-radius: 50%;
+            background: #24A3FF;
+            opacity: 0.2;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .slick-active button{
+        opacity: 1;
+    }
+}
