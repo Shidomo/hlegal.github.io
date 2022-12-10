@@ -5,8 +5,12 @@
 }
 
 body {
-    font: 400 20px/30px "Graphik LCG", Arial, Helvetica, sans-serif;
     color: #000;
+    font: 400 14px/25px "Graphik LCG", Arial, Helvetica, sans-serif;
+    @media (min-width:900px) {
+        font: 400 16px/28px "Graphik LCG", Arial, Helvetica, sans-serif;
+        
+    }
 }
 
 #wrapper {
@@ -16,7 +20,10 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
+    @media (min-width:968px) {     
+        width: 80%;
+    }
 }
 
 img {

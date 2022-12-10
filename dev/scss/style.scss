@@ -82,6 +82,11 @@ footer {
     }
 }
 
+.main-section__scroll {
 
+    &:hover {
+        fill: $hover-accent;
+    }
+}
 
 

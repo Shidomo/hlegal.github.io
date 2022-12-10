@@ -12,8 +12,12 @@
     }
     &__cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
+        
+        @media (min-width:968px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
     }
     &__card {
@@ -29,6 +33,10 @@
         }
         a{
             color: $active-regular;
+
+            &:hover {
+                color: $hover-accent;
+            }
         }
     }
 }
