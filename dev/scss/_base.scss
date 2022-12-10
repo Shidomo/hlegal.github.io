@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,9 @@
 
 body {
     color: #000;
-    font: 400 14px/25px "Graphik LCG", Arial, Helvetica, sans-serif;
+    font: 400 14px/25px 'Montserrat', Arial, Helvetica, sans-serif;
     @media (min-width:900px) {
-        font: 400 16px/28px "Graphik LCG", Arial, Helvetica, sans-serif;
-        
+        font: 400 16px/28px 'Montserrat', Arial, Helvetica, sans-serif;
     }
 }
 
@@ -35,6 +35,12 @@ img {
 h1 {
     font-size: 38px;
     line-height: 46.32px;
+    text-align: center;
+    font-weight: 700;
+
+    @media (min-width:576px) {
+        text-align: left;
+    }
 }
 
 h2 {

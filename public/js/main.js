@@ -5,6 +5,7 @@ var four = document.getElementById("business-oriented-text");
 let check = document.querySelectorAll('.checkbox-items');
 let lastClicked = check[0];
 
+/* слайдер */
 
 $(document).ready(function(){
     $('.slider').slick({
@@ -16,6 +17,7 @@ $(document).ready(function(){
   });
 
 
+/*   меню чекбокс */
 
 for( let i = 0; i < check.length; i++ ){
   check[i].addEventListener('click', function(){
@@ -93,6 +95,8 @@ function business_oriented() {
     }
 }
 
+/* работа с свг */
+
 $("img.favicon--white").each(function () {
     var $img = $(this);
     var imgClass = $img.attr("class");
@@ -143,3 +147,11 @@ $("img.main-section__scroll").each(function () {
         $img.replaceWith($svg);
     }, "xml");
 });
+
+/* бургер меню */
+
+let menuBtn = document.querySelector('.burger');
+
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('burger-active');
+})

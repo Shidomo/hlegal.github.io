@@ -7,7 +7,7 @@
         position: relative;
         flex-direction: column;
 
-        @media (min-width:968px) {
+        @media (min-width:1024px) {
             flex-direction: row;
         }
     }
@@ -20,13 +20,15 @@
         display:-webkit-inline-box;
         gap: 40px;
         width: 100%;
-        @media (min-width:968px) {
+        font-weight: 700;
+        @media (min-width:1024px) {
             display: flex;
-            align-items: flex-start;
+            align-items: flex-end;
             font-size: 38px;
             line-height: 46px;
             width: 50%;
             flex-direction: column;
+            padding: 0 10px 0 0;
             
         }
         
@@ -39,13 +41,13 @@
         text-align: left;
         gap: 30px;
         width: 100%;
-        @media (min-width:968px) {
-            width: 35%;
+        @media (min-width:1024px) {
+            width: 45%;
             flex-direction: row;
         }
 
         &::before { 
-            @media (min-width:968px) {
+            @media (min-width:1024px) {
                 content: "";
                 display: block;
                 height: 100%;
@@ -53,7 +55,7 @@
                 position: absolute;
                 top: 50%;
                 right: 50%;
-                transform: translateX(-50%) translateY(-50%);
+                transform: translateX(50%) translateY(-50%);
             }
         }
 
