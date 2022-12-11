@@ -1,11 +1,11 @@
 .third-section {
     background: #F5F5FA;
     padding: 60px 0 30px;
+    font-size: 14px;
 
     .publications-cards {
         display: grid;
         gap: 30px;
-        grid-area: 1fr 1fr;
         @media (min-width:968px) {
             grid-template-columns: 1fr 1fr 1fr;
         }
