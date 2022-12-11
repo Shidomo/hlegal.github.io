@@ -65,8 +65,7 @@
         justify-content: space-between;
         row-gap: 20px;
         @media (min-width:576px) {
-        //  исправить header и доделать футер и натсроить на мобилу
-        row-gap: 0;
+        row-gap: 10px;
         }
         @media (min-width:968px) {
             display: grid;
@@ -136,6 +135,13 @@
         margin: 0 auto;
         border-radius:  10px 10px 0 0;
         font-size: 24px;
+
+        .btn{
+            &--active{
+                color: red;
+                border-bottom: 1px solid red;
+            }
+        }
 
         li {
             padding: 10px 0;
