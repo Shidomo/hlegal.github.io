@@ -150,8 +150,20 @@ $("img.main-section__scroll").each(function () {
 
 /* бургер меню */
 
-let menuBtn = document.querySelector('.burger');
+/* let menuBtn = document.querySelector('.burger');
+let closeBtn = document.querySelector('#close')
 
-menuBtn.addEventListener('click', function(){
-    menuBtn.classList.toggle('burger-active');
-})
+     menuBtn.addEventListener('click',  function open(){
+        menuBtn.classList.add('burger-active');
+    })
+
+    closeBtn.addEventListener('click', function close(){
+        menuBtn.classList.remove('burger-active');
+    } )  */
+
+
+
+
+
+
+

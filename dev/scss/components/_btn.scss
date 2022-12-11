@@ -3,9 +3,37 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    font-weight: 700;
 
     img {
         width: 10px;
         height: 15px;
     }
+    &:hover {
+        .right {
+            border-color: $hover-accent;
+        }
+    }
+}
+
+i {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+
+    &:hover {
+        border-color: $hover-accent;
+    }
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-color: $active-regular;
+    
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: white;
 }

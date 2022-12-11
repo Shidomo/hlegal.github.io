@@ -1,4 +1,3 @@
-@import './vars';
 .third-section {
     background: #F5F5FA;
     padding: 60px 0 30px;
@@ -6,7 +5,6 @@
     .publications-cards {
         display: grid;
         gap: 30px;
-        /* grid-template-columns: 1fr 1fr; */
         grid-area: 1fr 1fr;
         @media (min-width:968px) {
             grid-template-columns: 1fr 1fr 1fr;
