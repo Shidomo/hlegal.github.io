@@ -148,6 +148,10 @@
             background: #F5F5FA;
             border-radius: 10px;
             margin: 14px;
+
+            &:first-child {
+                background: white;
+            }
         }
 
         a {
