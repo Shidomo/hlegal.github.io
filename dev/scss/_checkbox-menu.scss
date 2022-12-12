@@ -16,12 +16,12 @@
         font-size: 38px;
         line-height: 46px;
         flex-direction: row;
-        overflow: auto;
         display:-webkit-inline-box;
         gap: 40px;
         width: 100%; 
         font-weight: 700;
         color: $grey-text;
+        overflow: auto;
         @media (min-width:1024px) {
             display: flex;
             align-items: flex-end;

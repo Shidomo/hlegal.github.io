@@ -1,15 +1,20 @@
 .first-section {
     position: relative;
+    display: block;
+    margin: 0 auto;
+    flex-direction: column;
     &::after {
         content: "";
         display: block;
         position: absolute;
         background: #CACADB;
-        padding: 10px 0;
-        bottom: -20px;
+        padding: 12px 0;
+        bottom: -19px;
         width: 98%;
         z-index: -1;
         border-radius: 0px 0px 12px 12px;
+        left: 1%;
+        right: 1%;
     }
 
     &::before {
@@ -17,10 +22,12 @@
         display: block;
         position: absolute;
         background: #E7E7F2;
-        padding: 10px 0;
-        bottom: -40px;
-        width: 96%;
+        padding: 12px 0;
+        bottom: -38px;
+        width: 95%;
         z-index: -1;
         border-radius: 0px 0px 12px 12px;
+        left: 2.5%;
+        right: 2.5%;
     }
 }
