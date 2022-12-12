@@ -1,12 +1,27 @@
 .dot {
-    font-size: 0;
-    background: #B3B3BA;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-    @media (min-width:768px) {
-        display: block;
+    &--sm {
+        display: none;
+        @media (min-width:578px) {
+            display: flex;
+        }
+    }
+    
+    &::before {
+        font-size: 0;
+        background: #B3B3BA;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        display: none;
+        content: "";
+        
+    
+        @media (min-width:768px) {
+            display: block;
+        }
     }
 }

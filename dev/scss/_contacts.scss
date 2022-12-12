@@ -12,12 +12,8 @@
             padding: 0;
         }
 
-        &--sm {
-            display: none;
-            @media (min-width:578px) {
-                display: block;
-            }
-        }
+        
+        
         &--col-sm {
             flex-direction: column;
             @media (min-width: 622px) {
@@ -70,6 +66,8 @@
             }
     
         }
+
+        
     }
 
 }
