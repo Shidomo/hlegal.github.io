@@ -16,7 +16,7 @@
         
         &--col-sm {
             flex-direction: column;
-            @media (min-width: 622px) {
+            @media (min-width: 671px) {
                 flex-direction: row;
             }
         }
@@ -52,11 +52,11 @@
 
         &--col-sm {
             flex-direction: column; 
-            @media (min-width:622px) {
+            @media (min-width:671px) {
                 flex-direction: row;
             }
         }
-        @media (min-width:622px) {
+        @media (min-width:671px) {
             justify-content: flex-start;
         }
         
